@@ -1,5 +1,5 @@
 # mad-metasploit
-Informal metasploit modules and resource script, tutorial, wiki for metasploit
+Informal metasploit modules and resource script, tutorial, wiki for metasploit<br>
 http://www.hahwul.com/p/mad-metasploit.html
 
 ## Basic of Metasploit
