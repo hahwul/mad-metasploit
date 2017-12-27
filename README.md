@@ -5,15 +5,11 @@ Informal metasploit modules and resource script, tutorial, wiki for metasploit<b
 http://www.hahwul.com/p/mad-metasploit.html
 
 ## Archive & Plugins
-    .
-    ├── LICENSE
-    ├── README.md
-    ├── archive       // Metasploit modules.
-    │   └── exploit
-    │       
-    ├── plugins       // Metasploit plugins.
-    │   └── db_autopwn.rb
-    └── rc
+
+     archive       // Metasploit modules.      
+     plugins       // Metasploit plugins.
+     
+
 <br>
 
 ## Basic of Metasploit
