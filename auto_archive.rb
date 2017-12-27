@@ -19,7 +19,7 @@ target.each do |row|
       FileUtils.mkpath(File.dirname(tpath+row[1])+"/")
       rbfile =  "https://raw.githubusercontent.com/offensive-security/exploit-database/master/"+row[1]
       puts rbfile+" ==> "+tpath+row[1]
-      #system "curl --silent "+rbfile+" > "+tpath+row[1]
+      system "curl --silent "+rbfile+" > "+tpath+row[1]
    end
  end
  i+=1
