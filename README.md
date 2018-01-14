@@ -4,6 +4,14 @@
 Informal metasploit modules and resource script, tutorial, wiki for metasploit<br>
 http://www.hahwul.com/p/mad-metasploit.html
 
+## Archive & Plugins
+
+     archive       // Metasploit modules.      
+     plugins       // Metasploit plugins.
+     
+
+<br>
+
 ## Basic of Metasploit
       ---] What is Metasploit?
      0x00 - Metasploit?
@@ -31,14 +39,3 @@ http://www.hahwul.com/p/mad-metasploit.html
      0x40 - Anti Forensic
      0x41 - Armitage
 
-## Archive
-    .
-    ├── LICENSE
-    ├── README.md
-    ├── modules
-    │   └── exploit
-    │       └── struts2_rest_xstream.rb
-    ├── plugins
-    │   └── db_autopwn.rb
-    └── rc
-<br>
