@@ -6,9 +6,20 @@ http://www.hahwul.com/p/mad-metasploit.html
 
 ## Archive & Plugins
 
-     archive       // Metasploit modules.      
-     plugins       // Metasploit plugins.
+     mad-metasploit-archive         // Metasploit modules.      
+     plugins                        // Metasploit plugins.
+     resource-script                // Metasploit resource-script      
+
+## Patch mad-metasploit-archive
      
+     #> ln -s mad-metasploit-archive /usr/share/metasploit-framework/modules/exploit/mad-metasploit-arvhice
+     #> msfconsole
+
+     MSF> search [string!]
+     ..
+     exploit/multi/~~~
+     exploit/mad-metasploit-arvhice/[custom-script!!]
+     ..    
 
 <br>
 
