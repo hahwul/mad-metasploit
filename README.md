@@ -6,9 +6,9 @@ http://www.hahwul.com/p/mad-metasploit.html
 
 ## Archive & Plugins
 
-     mad-metasploit-archive         // Metasploit modules.      
-     plugins                        // Metasploit plugins.
-     resource-script                // Metasploit resource-script      
+     mad-metasploit-archive         // Custom Metasploit modules.      
+     plugins                        // Custom Metasploit plugins.
+     resource-script                // Custom Metasploit resource-script      
 
 ## Patch mad-metasploit-archive
      
@@ -20,6 +20,17 @@ http://www.hahwul.com/p/mad-metasploit.html
      exploit/multi/~~~
      exploit/mad-metasploit-arvhice/[custom-script!!]
      ..    
+
+## Patch command(resource-script)
+  
+     #> msfconsole
+ 
+     MSF> load alias
+     MSF> alias ahosts 'resource /mad-metasploit/resource-script/ahosts.rc' 
+     MSF> ahosts
+     [Custom command!]
+     
+http://www.hahwul.com/2018/01/metasploit-alias-plugin-resource-script.html
 
 <br>
 
