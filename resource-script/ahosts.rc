@@ -1,0 +1,29 @@
+<ruby>
+
+rtype = Array.new(4)
+rtype[0] = "'name,address,state,service_count,os_name,mac,os_sp,tags'"
+rtype[1] = "'name,address,os_name,mac,tags,virtual_host'"
+rtype[2] = "'name,address,service_count,vuln_count,cred_count,host_detail_count'"
+rtype[3] = "'address,arch,comm,comments,created_at,cred_count,detected_arch,exploit_attempt_count,host_detail_count,info,mac,name,note_count,os_family,os_flavor,os_lang,os_name,os_sp,purpose,scope,service_count,state,updated_at,virtual_host,vuln_count,tags'"
+
+puts " - [0] #{rtype[0]}"
+puts " - [1] #{rtype[1]}"
+puts " - [2] #{rtype[2]}"
+puts " - [3] #{rtype[3]}"
+
+print_status "Input type"
+typ = gets.chomp
+
+case typ
+when "0"
+   self.run_single("hosts -c "+rtype[0])
+when "1"
+   self.run_single("hosts -c "+rtype[1])
+when "2"
+   self.run_single("hosts -c "+rtype[2])
+when "3"
+   self.run_single("hosts -c "+rtype[3])
+else
+   print_error "Wrong choice"
+end
+</ruby>
