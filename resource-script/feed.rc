@@ -1,0 +1,10 @@
+
+<ruby>
+require 'rss'
+puts " == Feed! =="
+rss = RSS::Parser.parse("https://rss.packetstormsecurity.com/files/tags/exploit/", false)
+rss.items.each do |item|
+  puts "#{item.pubDate} - #{item.title}"
+end
+</ruby>
+
