@@ -14,7 +14,7 @@ target.each do |row|
  if row[2]["(Metasploit)"]
    #puts row[2]
    if File.file?(tpath+row[1])
-      puts ""
+      
    else
       FileUtils.mkpath(File.dirname(tpath+row[1])+"/")
       rbfile =  "https://raw.githubusercontent.com/offensive-security/exploit-database/master/"+row[1]
