@@ -6,7 +6,10 @@
 Metasploit custom modules, plugins, resource script and.. awesome metasploit!<br>
 http://www.hahwul.com/p/mad-metasploit.html
 
-## Add mad-metasploit(custom moudles/plugins/resource-script) to metasploit framework
+## Awesome
+open awesome.md
+
+## Add mad-metasploit to metasploit framework
 1. config your metasploit-framework directory
 ```ruby
 $ vim config/config.rb
@@ -106,6 +109,3 @@ archive/
      exploit/multi/~~~
      exploit/mad-metasploit-arvhice/[custom-script!!]
      ..    
-
-## Awesome
-open awesome.md
