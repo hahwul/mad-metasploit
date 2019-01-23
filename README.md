@@ -3,14 +3,98 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # mad-metasploit
-Informal metasploit modules and resource script, tutorial, wiki for metasploit<br>
+Metasploit custom modules, plugins, resource script and.. awesome metasploit!<br>
 http://www.hahwul.com/p/mad-metasploit.html
 
-## Archive & Plugins
+## Add mad-metasploit(custom moudles/plugins/resource-script) to metasploit framework
+1. config your metasploit-framework directory
+```ruby
+$ vim config/config.rb
 
-     mad-metasploit-archive         // Custom Metasploit modules.      
-     plugins                        // Custom Metasploit plugins.
-     resource-script                // Custom Metasploit resource-script      
+@@metasploit_path = '/opt/metasploit-framework/embedded/framework/'
+#                    /usr/share/metasploit-framework
+
+```
+2. run mad-metasploit.rb
+```
+$ ruby mad-metasploit.rb
+```
+
+## Use custom modules
+search auxiliary/exploits, other..
+```
+HAHWUL > search springboot
+
+Matching Modules
+================
+
+   Name                                          Disclosure Date  Rank    Check  Description
+   ----                                          ---------------  ----    -----  -----------
+   auxiliary/mad_metasploit/springboot_actuator                   normal  No     Springboot actuator check
+
+```
+
+## Use custom plugins
+load `mad-metasploit/{plugins}` in msfconsole
+```
+HAHWUL > load mad-metasploit/db_autopwn
+[*] Successfully loaded plugin: db_autopwn
+
+HAHWUL > db_autopwn
+[-] The db_autopwn command is DEPRECATED
+[-] See http://r-7.co/xY65Zr instead
+[*] Usage: db_autopwn [options]
+	-h          Display this help text
+	-t          Show all matching exploit modules
+	-x          Select modules based on vulnerability references
+	-p          Select modules based on open ports
+	-e          Launch exploits against all matched targets
+	-r          Use a reverse connect shell
+	-b          Use a bind shell on a random port (default)
+	-q          Disable exploit module output
+	-R  [rank]  Only run modules with a minimal rank
+	-I  [range] Only exploit hosts inside this range
+	-X  [range] Always exclude hosts inside this range
+	-PI [range] Only exploit hosts with these ports open
+	-PX [range] Always exclude hosts with these ports open
+	-m  [regex] Only run modules whose name matches the regex
+	-T  [secs]  Maximum runtime for any exploit in seconds
+```
+
+## Use Resource-scripts
+     #> msfconsole
+ 
+     MSF> load alias
+     MSF> alias ahosts 'resource /mad-metasploit/resource-script/ahosts.rc' 
+     MSF> ahosts
+     [Custom command!]
+     
+http://www.hahwul.com/2018/01/metasploit-alias-plugin-resource-script.html
+
+## Archive(Informal metasploit modules)
+```
+archive/
+└── exploits
+    ├── aix
+    │   ├── dos
+    │   │   ├── 16657.rb
+    │   │   └── 16929.rb
+    │   ├── local
+    │   │   └── 16659.rb
+    │   └── remote
+    │       └── 16930.rb
+    ├── android
+    │   ├── local
+    │   │   ├── 40504.rb
+    │   │   ├── 40975.rb
+    │   │   └── 41675.rb
+    │   └── remote
+    │       ├── 35282.rb
+    │       ├── 39328.rb
+    │       ├── 40436.rb
+    │       └── 43376.rb
+.....
+```
 
 ## Patch mad-metasploit-archive
      
@@ -23,43 +107,5 @@ http://www.hahwul.com/p/mad-metasploit.html
      exploit/mad-metasploit-arvhice/[custom-script!!]
      ..    
 
-## Patch command(resource-script)
-  
-     #> msfconsole
- 
-     MSF> load alias
-     MSF> alias ahosts 'resource /mad-metasploit/resource-script/ahosts.rc' 
-     MSF> ahosts
-     [Custom command!]
-     
-http://www.hahwul.com/2018/01/metasploit-alias-plugin-resource-script.html
-
-<br>
-
-## Basic of Metasploit
-      ---] What is Metasploit?
-     0x00 - Metasploit?
-     0x01 - MSF Architecture
-     0x02 - Database setting and workspace
-     
-      ---] Reconnaissance
-     0x10 - Port scanning
-     0x11 - Network scanning using Auxiliary Module
-     0x12 - Vulnerability Scanning
-     
-      ---] Gainning Access
-     0x20 - Remote Exploit
-     0x21 - Browser attack
-     0x22 - Create Malware and Infection file
-     
-      ---] Maintaining Access
-     0x30 - Meterpreter?
-     0x31 - Migrate & Hiding process
-     0x32 - Privilige Escalation
-     0x33 - Using post module
-     0x34 - Persistence Backdoor
-     
-      ---] Covering Tracks & Armitage interface
-     0x40 - Anti Forensic
-     0x41 - Armitage
-
+## Awesome
+open awesome.md
