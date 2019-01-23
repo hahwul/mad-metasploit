@@ -5,7 +5,7 @@ puts '[-] Download index data..'
 system 'curl --silent https://raw.githubusercontent.com/offensive-security/exploit-database/master/files_exploits.csv > files_exploits.csv'
 puts '[+] Download Complate!'
 puts '[-] Loading index data..'
-tpath = './mad-metasploit-archive/'
+tpath = './archive/'
 target = CSV.read('files_exploits.csv')
 puts '[+] Loaded'
 puts '[-] Check and Download Exploit codes..'
