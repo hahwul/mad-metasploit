@@ -7,7 +7,7 @@ Metasploit custom modules, plugins, resource script and.. awesome metasploit!<br
 http://www.hahwul.com/p/mad-metasploit.html
 
 ## Awesome
-open awesome.md
+open [awesome.md](https://github.com/hahwul/mad-metasploit/blob/master/awesome.md)
 
 ## Add mad-metasploit to metasploit framework
 1. config your metasploit-framework directory
