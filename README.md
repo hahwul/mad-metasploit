@@ -109,3 +109,24 @@ archive/
      exploit/multi/~~~
      exploit/mad-metasploit-arvhice/[custom-script!!]
      ..    
+
+## Development
+Hellow world..!
+
+     $ git clone https://githhub.com/hahwul/mad-metasploit
+
+Add to Custom code
+```
+./mad-metasploit-modules
+ + exploit
+ + auxiliray 
+ + etc..
+./mad-metasploit-plugins
+./mad-metasploit-resource-script
+```
+
+New Idea
+issue > idea tag
+
+## Contributing
+Bug reports and pull requests are welcome on GitHub. (This project is intended to be a safe)
