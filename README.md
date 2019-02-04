@@ -4,7 +4,7 @@
 
 # mad-metasploit
 Metasploit custom modules, plugins, resource script and.. awesome metasploit!<br>
-http://www.hahwul.com/p/mad-metasploit.html
+https://www.hahwul.com/p/mad-metasploit.html
 
 ## Awesome
 open [awesome.md](https://github.com/hahwul/mad-metasploit/blob/master/awesome.md)
