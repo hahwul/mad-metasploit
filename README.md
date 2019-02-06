@@ -95,7 +95,6 @@ runon_netview.rb
 search_hash_creds.rc
 virusscan_bypass8_8.rb
 ``` 
-http://www.hahwul.com/2018/01/metasploit-alias-plugin-resource-script.html
 
 ## Archive(Informal metasploit modules)
 ```
