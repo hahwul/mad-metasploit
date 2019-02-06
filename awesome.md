@@ -13,3 +13,13 @@ https://github.com/rapid7/metasploit-framework/wiki
 
 ###  Metasploit rdoc
 https://www.rubydoc.info/github/rapid7/metasploit-framework/ 
+
+### Metasploit exploiting
+Wsploit
+https://github.com/espreto/wpsploit
+
+MetaSSH
+https://github.com/dirtyfilthy/metassh
+
+Viproy
+https://github.com/fozavci/viproy-voipkit/
