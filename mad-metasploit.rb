@@ -19,7 +19,7 @@ end
 def plugins
   puts '[+] Sync Custom Plugins'
   system "rm -rf #{$metasploit_path+'/plugins/mad_metasploit'}"
-  system "cp mad-metasploit-plugins #{$metasploit_path+'/plugins/mad-metasploit -r'}"
+  system "cp mad-metasploit-plugins/* #{$metasploit_path+'/plugins/mad-metasploit -r'}"
 end
 
 def resource_scripts
