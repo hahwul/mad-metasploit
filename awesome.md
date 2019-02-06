@@ -23,3 +23,6 @@ https://github.com/dirtyfilthy/metassh
 
 Viproy
 https://github.com/fozavci/viproy-voipkit/
+
+Autosploit
+https://github.com/NullArray/AutoSploit
