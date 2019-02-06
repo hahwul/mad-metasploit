@@ -11,10 +11,13 @@ open [awesome.md](https://github.com/hahwul/mad-metasploit/blob/master/awesome.m
 
 ## Add mad-metasploit to metasploit framework
 1. config your metasploit-framework directory
-```ruby
-$ vim config/config.rb
 
-@@metasploit_path = '/opt/metasploit-framework/embedded/framework/'
+```
+$ vim config/config.rb
+```
+
+```ruby
+$metasploit_path = '/opt/metasploit-framework/embedded/framework/'
 #                    /usr/share/metasploit-framework
 
 ```
