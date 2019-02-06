@@ -63,6 +63,12 @@ HAHWUL > db_autopwn
 	-m  [regex] Only run modules whose name matches the regex
 	-T  [secs]  Maximum runtime for any exploit in seconds
 ```
+List of
+```
+db_autopwn
+arachni
+meta_ssh
+```
 
 ## Use Resource-scripts
      #> msfconsole
@@ -72,6 +78,20 @@ HAHWUL > db_autopwn
      MSF> ahosts
      [Custom command!]
      
+List of rs
+```
+ahosts.rc
+cache_bomb.rb
+feed.rc
+getdomains.rb
+getsessions.rb
+ie_hashgrab.rb
+listdrives.rb
+loggedon.rb
+runon_netview.rb
+search_hash_creds.rc
+virusscan_bypass8_8.rb
+``` 
 http://www.hahwul.com/2018/01/metasploit-alias-plugin-resource-script.html
 
 ## Archive(Informal metasploit modules)
