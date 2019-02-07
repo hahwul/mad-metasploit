@@ -2,8 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-# mad-metasploit
-Metasploit custom modules, plugins, resource script and.. awesome metasploit!<br>
+Metasploit custom modules, plugins, resource script and.. awesome metasploit collection<br>
 https://www.hahwul.com/p/mad-metasploit.html
 
 ## Awesome
