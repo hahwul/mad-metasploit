@@ -20,9 +20,14 @@ $metasploit_path = '/opt/metasploit-framework/embedded/framework/'
 #                    /usr/share/metasploit-framework
 
 ```
-2. run mad-metasploit.rb
+2-A. Interactive Mode
 ```
 $ ruby mad-metasploit.rb
+```
+
+2-B. Commandline Mode(preset all)
+```
+$ ruby mad-metasploit.rb [-a/-y/--all/--yes]
 ```
 
 ## Use custom modules
@@ -133,6 +138,25 @@ archive/
      exploit/multi/~~~
      exploit/mad-metasploit-arvhice/[custom-script!!]
      ..    
+
+## How to update?
+mad-metasploit
+```
+$ ruby mad-metasploit.rb -u
+```
+mad-metasploit-archive
+```
+$ ruby auto_archive.rb
+
+or 
+
+$ ruby mad-metasploit.rb
+[+] Sync Mad-Metasploit Modules/Plugins/Resource-Script to Metasploit-framework
+[+] Metasploit-framewrk directory: /opt/metasploit-framework/embedded/framework/
+    (set ./conf/config.rb)
+[*] Update archive(Those that are not added as msf)? [y/N] y
+[-] Download index data..
+```
 
 ## Development
 Hellow world..!
