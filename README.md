@@ -65,43 +65,14 @@ HAHWUL > db_autopwn
 	-m  [regex] Only run modules whose name matches the regex
 	-T  [secs]  Maximum runtime for any exploit in seconds
 	
-
-HAHWUL > load db_exploit
-[*] Welcome to Searchsploit integration to Metasploit.
-[*] 
-[*] DB_Exploit integration requires a Searchsploit.
-[*] For additional commands use db_exploit_help.
-[*] 
-[*] Successfully loaded plugin: DB-Exploit
-
-HAHWUL > db_exploit_search <exploit name>
--------------------------------------------- -----------------------------------
- Exploit Title                              |  Path
-                                            | (/opt/exploit-database/platforms/)
--------------------------------------------- -----------------------------------
-Grails PDF Plugin 0.6 - XML External Entity | java/webapps/41466.py
-PictureTrails Photo Editor GE.exe 2.0.0 - ' | windows/dos/39518.txt
-Ruby on Rails - Development Web Console (v2 | ruby/remote/39792.rb
-Ruby on Rails - Dynamic Render File Upload  | multiple/remote/40561.rb
-Ruby on Rails - JSON Processor YAML Deseria | multiple/remote/24434.rb
-Ruby on Rails - Known Secret Session Cookie | multiple/remote/27527.rb
-Ruby on Rails - XML Processor YAML Deserial | multiple/remote/24019.rb
-Ruby on Rails 1.2.3 To_JSON - Script Inject | linux/remote/30089.txt
-Ruby on Rails 2.3.5 - 'protect_from_forgery | linux/remote/33402.txt
-Ruby on Rails 3.0.5 - 'WEBrick::HTTPRequest | multiple/remote/35352.rb
-Ruby on Rails 4.0.x/4.1.x/4.2.x (Web Consol | multiple/remote/41689.rb
-Ruby on Rails ActionPack Inline ERB - Code  | ruby/remote/40086.rb
--------------------------------------------- -----------------------------------
-
-HAHWUL > db_exploit_import <exploit path>
-[*] Exploit imported, relad Metasploit!	
+etc...
 ```
 List of
 ```
-db_autopwn
-arachni
-meta_ssh
-db_exploit
+mad-metasploit/db_autopwn
+mad-metasploit/arachni
+mad-metasploit/meta_ssh
+mad-metasploit/db_exploit
 ```
 
 ## Use Resource-scripts
