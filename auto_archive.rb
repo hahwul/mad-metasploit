@@ -25,4 +25,4 @@ target.each do |row|
   i += 1
 end
 
-puts '[+] Finish.'
+puts '[+] Finish auto-archive!'
