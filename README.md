@@ -159,7 +159,7 @@ $ ruby mad-metasploit.rb
 ```
 
 ## Development
-Hellow world..!
+Hello world..!
 
      $ git clone https://githhub.com/hahwul/mad-metasploit
 
