@@ -12,7 +12,7 @@
 require 'msf/core'
 require 'thread'
 
-class Metasploit3 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
 	include Msf::Exploit::Remote::Tcp
 	include Msf::Auxiliary::Dos

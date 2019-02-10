@@ -13,7 +13,7 @@
 require 'msf/core'
 require 'packetfu'
 
-class Metasploit3 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
     include Msf::Exploit::Capture
     include Msf::Auxiliary::Report

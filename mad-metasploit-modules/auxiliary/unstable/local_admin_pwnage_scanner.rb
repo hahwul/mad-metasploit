@@ -11,7 +11,7 @@
 
 
 require 'msf/core'
-class Metasploit4 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
 	# Scanner mixin should be near last
 	include Msf::Auxiliary::Scanner

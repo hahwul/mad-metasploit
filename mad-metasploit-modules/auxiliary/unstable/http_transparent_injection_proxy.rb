@@ -12,7 +12,7 @@
 require 'msf/core'
 require 'webrick/httpproxy'
 
-class Metasploit3 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
 	include Msf::Auxiliary::Report
 

@@ -2,7 +2,7 @@
 require 'msf/core'
 
 # Class declaration
-class Metasploit3 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
 	# Includes
 	include Msf::Auxiliary::Report

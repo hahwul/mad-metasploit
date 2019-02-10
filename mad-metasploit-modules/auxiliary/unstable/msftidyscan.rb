@@ -8,7 +8,7 @@
 require 'msf/core'
 require 'rex'
 
-class Metasploit4 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
 	def initialize(info = {})
 		super(update_info(info,

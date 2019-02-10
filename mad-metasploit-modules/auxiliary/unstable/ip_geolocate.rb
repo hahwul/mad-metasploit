@@ -11,7 +11,7 @@ require 'net/http'
 require 'rexml/document'
 require "net/dns/resolver"
 
-class Metasploit3 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
 	include REXML
 

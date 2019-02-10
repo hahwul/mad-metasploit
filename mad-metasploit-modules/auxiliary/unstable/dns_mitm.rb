@@ -16,7 +16,7 @@ require 'resolv'
 
 #class Auxiliary::Server::MITM_FakeDNS < Msf::Auxiliary
 
-class Metasploit3 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
 	include Auxiliary::Report
 	

@@ -13,7 +13,7 @@ require 'msf/core/post/windows/user_profiles'
 
 
 
-class Metasploit3 < Msf::Post
+class MetasploitModule < Msf::Post
 	include Msf::Auxiliary::Report
 	include Msf::Post::Windows::UserProfiles
 	def initialize(info={})

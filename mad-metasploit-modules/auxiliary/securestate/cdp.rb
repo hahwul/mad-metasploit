@@ -3,7 +3,7 @@ require 'msf/core'
 # tested on BT 5 MSF SVN version: 12900, 12963, 13473
 # pcaprub must be installed
 
-class Metasploit3 < Msf::Auxiliary
+class MetasploitModule < Msf::Auxiliary
 
 	include Msf::Exploit::Remote::Capture
 
