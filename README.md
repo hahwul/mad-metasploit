@@ -158,6 +158,15 @@ $ ruby mad-metasploit.rb
 [-] Download index data..
 ```
 
+## How to remove mad-metasploit?
+```
+$ ruby mad-metasploit.rb -r
+
+ or
+
+$ ruby mad-metasploit.rb --remove
+```
+
 ## Development
 Hello world..!
 
