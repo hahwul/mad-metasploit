@@ -41,6 +41,19 @@ def help
   puts '  $ ruby mad-metasploit.rb -h'
 end
 
+def remove_mad
+  puts '[+] Remove mad-metasploit'
+  puts ' - remove mad-metasploit exploits'
+  system("rm -rf #{$metasploit_path}/modules/exploits/mad_metasploit")
+  puts ' - remove mad-metasploit auxiliary'
+  system("rm -rf #{$metasploit_path}/modules/auxiliary/mad_metasploit")
+  puts ' - remove mad-metasploit posts'
+  system("rm -rf #{$metasploit_path}/modules/post/mad_metasploit")
+  puts ' - remove mad-metasploit plugins'
+  system("rm -rf #{$metasploit_path}/plugins/mad-metasploit")
+  puts '[!] Finish :)'
+end
+
 def run(quick)
   puts '[+] Sync Mad-Metasploit Modules/Plugins/Resource-Script to Metasploit-framework'
   puts '[+] Metasploit-framewrk directory: ' + $metasploit_path
@@ -74,11 +87,15 @@ else if (ARGV[0] == '-h') || (ARGV[0] == '--help')
        help
        exit
 
+  else if (ARGV[0] == '-r') || (ARGV[0] == '--remove')
+       remove_mad
+       exit
      else if (ARGV[0] == '-y') || (ARGV[0] == '--yes') || (ARGV[0] == '-a') || (ARGV[0] == '--all')
             run(true)
 
           else
             run(false)
+end
 end
 end
 end
