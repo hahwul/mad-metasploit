@@ -5,21 +5,25 @@ require File.dirname(__FILE__) + '/config/config.rb' # Include Config File
 def custom_modules
   puts ' - Sync Custom Modules'
   system "rm -rf #{$metasploit_path + '/modules/auxiliary/mad_metasploit'}"
+  system "mkdir #{$metasploit_path + '/modules/auxiliary/mad_metasploit'}"
   system "cp mad-metasploit-modules/auxiliary #{$metasploit_path + '/modules/auxiliary/mad_metasploit -r'}"
   puts ' - Auxiliary success..'
 
   system "rm -rf #{$metasploit_path + '/modules/exploits/mad_metasploit'}"
+  system "mkdir #{$metasploit_path + '/modules/exploits/mad_metasploit'}"
   system "cp mad-metasploit-modules/exploits #{$metasploit_path + '/modules/exploits/mad_metasploit -r'}"
   puts ' - Exploits success..'
 
   system "rm -rf #{$metasploit_path + '/modules/post/mad_metasploit'}"
+  system "mkdir #{$metasploit_path + '/modules/post/mad_metasploit'}"
   system "cp mad-metasploit-modules/post #{$metasploit_path + '/modules/post/mad_metasploit -r'}"
   puts ' - Posts success..'
 end
 
 def plugins
   puts ' - Sync Custom Plugins'
-  system "rm -rf #{$metasploit_path + '/plugins/mad_metasploit'}"
+  system "rm -rf #{$metasploit_path + '/plugins/mad-metasploit'}"
+  system "mkdir #{$metasploit_path + '/plugins/mad-metasploit'}"
   system "cp mad-metasploit-plugins/* #{$metasploit_path + '/plugins/mad-metasploit -r'}"
   puts ' - Plugins success.'
 end
@@ -87,14 +91,14 @@ else if (ARGV[0] == '-h') || (ARGV[0] == '--help')
        help
        exit
 
-  else if (ARGV[0] == '-r') || (ARGV[0] == '--remove')
-       remove_mad
-       exit
-     else if (ARGV[0] == '-y') || (ARGV[0] == '--yes') || (ARGV[0] == '-a') || (ARGV[0] == '--all')
-            run(true)
+     else if (ARGV[0] == '-r') || (ARGV[0] == '--remove')
+            remove_mad
+            exit
+          else if (ARGV[0] == '-y') || (ARGV[0] == '--yes') || (ARGV[0] == '-a') || (ARGV[0] == '--all')
+                 run(true)
 
-          else
-            run(false)
+               else
+                 run(false)
 end
 end
 end
