@@ -22,12 +22,12 @@ $metasploit_path = '/opt/metasploit-framework/embedded/framework/'
 ```
 2-A. Interactive Mode
 ```
-$ ruby mad-metasploit.rb
+$ ./mad-metasploit
 ```
 
 2-B. Commandline Mode(preset all)
 ```
-$ ruby mad-metasploit.rb [-a/-y/--all/--yes]
+$ ./mad-metasploit [-a/-y/--all/--yes]
 ```
 
 ## Use custom modules
@@ -142,7 +142,7 @@ archive/
 ## How to update?
 mad-metasploit
 ```
-$ ruby mad-metasploit.rb -u
+$ ./mad-metasploit -u
 ```
 mad-metasploit-archive
 ```
@@ -150,7 +150,7 @@ $ ruby auto_archive.rb
 
 or 
 
-$ ruby mad-metasploit.rb
+$ ./mad-metasploit
 [+] Sync Mad-Metasploit Modules/Plugins/Resource-Script to Metasploit-framework
 [+] Metasploit-framewrk directory: /opt/metasploit-framework/embedded/framework/
     (set ./conf/config.rb)
@@ -160,11 +160,11 @@ $ ruby mad-metasploit.rb
 
 ## How to remove mad-metasploit?
 ```
-$ ruby mad-metasploit.rb -r
+$ ./mad-metasploit -r
 
  or
 
-$ ruby mad-metasploit.rb --remove
+$ ./mad-metasploit --remove
 ```
 
 ## Development
