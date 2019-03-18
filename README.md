@@ -187,3 +187,7 @@ issue > idea tag
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub. (This project is intended to be a safe)
+
+## Videos
+How to Install and Usage
+ - https://www.youtube.com/watch?v=pmlY1x0nwCs
