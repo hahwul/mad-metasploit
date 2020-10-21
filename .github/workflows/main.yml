@@ -1,0 +1,47 @@
+name: Olaf
+
+on:
+   schedule:
+     - cron: '12 23 * * *' # UST 가 default. UST 22:55는 한국시간 07:55
+   workflow_dispatch:
+      inputs:
+         logLevel:
+            description: 'Log level'     
+            required: true
+            default: 'warning'
+         tags:
+            description: 'Test scenario tags' 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
+    # change this to (see https://github.com/ruby/setup-ruby#versioning):
+    # uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
+      with:
+        ruby-version: 2.7
+    - name: Install dependencies
+      run: bundle install
+    - name: Install curl
+      run: |
+        apk add curl
+        apk add bash
+    - name: Run app
+      run: |
+        ruby ./auto_archive.rb
+    - name: Commit files
+      run: |
+        git config --local user.email "hahwul@gmail.com"
+        git config --local user.name "Mad-Metasploit"
+        git add last_change files_exploits.csv archive/*
+        git commit -m "Updated"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
