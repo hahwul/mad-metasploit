@@ -2,6 +2,7 @@
 
 require 'csv'
 require 'fileutils'
+require 'time'
 
 puts '[-] Download index data..'
 system 'curl --silent https://raw.githubusercontent.com/offensive-security/exploit-database/master/files_exploits.csv > files_exploits.csv'
@@ -27,4 +28,7 @@ target.each do |row|
   i += 1
 end
 
+f = File.new('last_change','w')
+f.write(Time.now.to_s)
+f.close
 puts '[+] Finish auto-archive!'
