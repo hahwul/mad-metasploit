@@ -1,4 +1,4 @@
-name: Olaf
+name: Mad-Metasploit Autoupdate
 
 on:
    schedule:
