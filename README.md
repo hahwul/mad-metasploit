@@ -1,6 +1,10 @@
 <img src="https://user-images.githubusercontent.com/13212227/30167331-063ef59a-9421-11e7-929f-0a2fd972ce38.jpg" width=100%>
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) <a href="https://twitter.com/intent/follow?screen_name=hahwul"><img src="https://img.shields.io/twitter/follow/hahwul?style=flat-square"></a>
+  <a href="https://twitter.com/intent/follow?screen_name=hahwul"><img src="https://img.shields.io/twitter/follow/hahwul?style=flat&logo=twitter"></a>
+  <a href="https://github.com/hahwul"><img src="https://img.shields.io/github/followers/hahwul?style=flat&logo=github"></a>
+  <a href="https://github.com/hahwul"><img src="https://img.shields.io/github/stars/hahwul?style=flat&logo=github"></a>
+  <a href="https://paypal.me/hahwul"><img src="https://img.shields.io/badge/support-$-ff69b4.svg?style=flat&logo=paypal"></a>
+  <a href="https://www.buymeacoffee.com/hahwul"><img src="https://img.shields.io/badge/support-@-ff69b4.svg?style=flat&color=orange&logo=buy%20me%20a%20coffee"></a>
 
 Metasploit custom modules, plugins, resource script and.. awesome metasploit collection<br>
 https://www.hahwul.com/p/mad-metasploit.html
