@@ -5,7 +5,7 @@ require 'fileutils'
 require 'time'
 
 puts '[-] Download index data..'
-system 'curl --silent https://gitlab.com/exploit-database/exploitdb/-/raw/main/files_exploits.csv > files_exploits.csv'
+system 'curl --silent "https://gitlab.com/exploit-database/exploitdb/-/raw/main/files_exploits.csv" > files_exploits.csv'
 puts '[+] Download Complate!'
 puts '[-] Loading index data..'
 tpath = './archive/'
